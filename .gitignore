@@ -1,0 +1,140 @@
+# ==============================================================================
+# ModalBrain - Electronic Music & Audio DSP .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Compiled Audio Plugins & Shared Libraries
+# ------------------------------------------------------------------------------
+*.vst3/
+*.vst/
+*.component/
+*.clap/
+*.lv2/
+*.aaxplugin/
+*.dll
+*.dylib
+*.so
+*.out
+*.app/
+
+# ------------------------------------------------------------------------------
+# Build Artifacts & Toolchains (C++, Rust, CMake, Make)
+# ------------------------------------------------------------------------------
+build/
+bin/
+lib/
+cmake-build-*/
+.cache/
+.ninja*
+compile_commands.json
+*.o
+*.obj
+*.a
+*.lib
+*.d
+*.ilk
+*.pdb
+*.exp
+
+# Rust Cargo builds
+target/
+**/*.rs.bk
+Cargo.lock
+
+# JUCE generated files
+Builds/
+JuceLibraryCode/
+
+# ------------------------------------------------------------------------------
+# Digital Audio Workstations (DAW) Cache & Backups
+# ------------------------------------------------------------------------------
+# Bitwig Studio
+*.bwproject.autosave/
+*.bwproject.backup/
+*.bwproject.cache/
+*.bwproject.tmp*
+
+# Ableton Live
+* Backup/
+*.als.tmp*
+Ableton Project Info/
+*.asd
+
+# Reaper
+*.rpp-bak
+*.rpp-undo
+*.RPP-UNDO
+*.reapeaks
+
+# FL Studio
+*.flp.bak
+
+# Logic Pro & GarageBand
+*.logicx/ProjectData/
+*.logicx/Alternatives/*/Display State*
+*.band/
+
+# Pro Tools
+Session File Backups/
+
+# Studio One
+*.song.bak
+*.show.bak
+
+# ------------------------------------------------------------------------------
+# Modular & Visual Programming Temps (Max/MSP, Pure Data, VCV Rack)
+# ------------------------------------------------------------------------------
+*.maxpat.bak
+*.mxf
+*.pd~
+*.pd.bak
+*.vcv.bak
+
+# ------------------------------------------------------------------------------
+# Audio Analysis & Temporary Peak/Render Caches
+# ------------------------------------------------------------------------------
+*.pk
+*.pk2
+*.peaks
+*.reapeaks
+*.wav.asd
+*.flac.asd
+*.mp3.asd
+*.cache
+*.crash
+*.dmp
+*.core
+
+# ------------------------------------------------------------------------------
+# Python & Machine Learning / Neural Audio
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+wandb/
+
+# ------------------------------------------------------------------------------
+# IDEs & System Files
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

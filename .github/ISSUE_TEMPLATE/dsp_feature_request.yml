@@ -1,0 +1,42 @@
+name: DSP Algorithm & Feature Proposal
+description: Propose a new synthesis engine, filter topology, modulation source, or DSP feature.
+title: "[DSP]: "
+labels: ["enhancement", "dsp-research"]
+body:
+  - type: dropdown
+    id: algorithm_type
+    attributes:
+      label: Algorithm Domain
+      options:
+        - "Oscillator / Synthesis (Physical Modeling, Wavetable, Additive, FM)"
+        - "Resonator / Filter (Modal, Ladder, State Variable, Comb)"
+        - "Nonlinear Dynamics / Saturation / Wavefolding"
+        - "Modulation & Generative Sequencing"
+        - "Spatial Audio / Reverb / Delay"
+        - "Neural Audio / Timbre Modeling (NAM, ONNX)"
+        - "MIDI 2.0 / MPE Control"
+    validations:
+      required: true
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Concept & Musical Purpose
+      description: Explain the musical or technical motivation behind this proposal.
+      placeholder: Describe the sonic character, use case, or missing capability.
+    validations:
+      required: true
+  - type: textarea
+    id: theoretical_basis
+    attributes:
+      label: Mathematical or Acoustic References
+      description: Include papers, differential equations, block diagrams, or reference hardware if applicable.
+  - type: dropdown
+    id: real_time_feasibility
+    attributes:
+      label: Real-Time Audio Constraints
+      options:
+        - "Lightweight (Low CPU, O(1) per sample)"
+        - "Moderate (Vectorizable with SIMD)"
+        - "Heavy (Requires background worker / offline rendering)"
+    validations:
+      required: true

@@ -1,0 +1,35 @@
+name: Sound Design & Preset Submission
+description: Submit a new sound preset, patch bank, or neural timbre model.
+title: "[Preset]: "
+labels: ["sound-design", "presets"]
+body:
+  - type: input
+    id: preset_title
+    attributes:
+      label: Preset / Patch Name
+    validations:
+      required: true
+  - type: dropdown
+    id: sound_category
+    attributes:
+      label: Sound Classification
+      options:
+        - "Bass / Sub"
+        - "Lead / Melodic"
+        - "Pad / Texture / Drone"
+        - "Percussive / Transient"
+        - "Glitch / Generative / Experimental"
+        - "Effect / FX"
+    validations:
+      required: true
+  - type: textarea
+    id: modulation_notes
+    attributes:
+      label: Expression & Performance Routing
+      description: Detail how Mod Wheel, MPE pressure, Pitch Bend, or Macros shape the sound.
+    validations:
+      required: true
+  - type: input
+    id: audio_preview_link
+    attributes:
+      label: Audio Preview Link (SoundCloud, Clyp, Drive, or attached MP3/WAV)

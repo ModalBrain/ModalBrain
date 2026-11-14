@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ModalBrain Discussions
+    url: https://github.com/orgs/ModalBrain/discussions
+    about: Ask questions, share audio clips, and discuss DSP ideas with the community.

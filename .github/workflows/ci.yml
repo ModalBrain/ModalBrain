@@ -1,0 +1,36 @@
+name: ModalBrain CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-validate:
+    name: Lint & Structure Verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Verify Git LFS configuration
+        run: |
+          git lfs env
+          echo "Git LFS verified."
+
+      - name: Verify Audio Safety Standards
+        run: |
+          echo "Checking directory layout and project integrity..."
+          test -d dsp
+          test -d plugins
+          test -d patches
+          test -d presets
+          test -d models
+          echo "All core audio domains present."
