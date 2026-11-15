@@ -1,0 +1,18 @@
+! bohlen_pierce.scl
+!
+Bohlen-Pierce 13-Tone Equal Temperament (13-ED3, dividing the 3:1 tritave)
+ 13
+!
+ 146.304
+ 292.608
+ 438.913
+ 585.217
+ 731.521
+ 877.825
+ 1024.129
+ 1170.434
+ 1316.738
+ 1463.042
+ 1609.346
+ 1755.650
+ 3/1

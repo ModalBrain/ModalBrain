@@ -34,3 +34,11 @@ jobs:
           test -d presets
           test -d models
           echo "All core audio domains present."
+
+      - name: Build and Run Core DSP Tests
+        run: |
+          mkdir -p build
+          cd build
+          cmake ../dsp
+          cmake --build .
+          ctest --output-on-failure

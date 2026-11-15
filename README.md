@@ -88,15 +88,16 @@ git lfs pull
 
 ## 🤝 Contributing
 
-We welcome contributions from DSP engineers, modular synthesists, sound designers, and electronic musicians!
+We welcome contributions from DSP engineers, modular synthesists, sound designers, and electronic musicians! Please read our full [Contribution Guidelines](CONTRIBUTING.md) before submitting.
 
-1. Check open issues or start a discussion in our community.
-2. Fork the repository and create your feature branch:
+1. Explore the [Awesome Modal Music Reading List](docs/awesome-modal-music.md) and [Community Setup Guide](docs/COMMUNITY_SETUP.md).
+2. Check open issues or start a discussion in our community.
+3. Fork the repository and create your feature branch:
    ```bash
    git checkout -b feature/resonant-modal-filter
    ```
-3. Ensure your pull request complies with our [Real-Time Audio Safety Checklist](.github/pull_request_template.md).
-4. Submit a Pull Request targeting the `main` branch.
+4. Ensure your pull request complies with our [Real-Time Audio Safety Checklist](.github/pull_request_template.md).
+5. Submit a Pull Request targeting the `main` branch.
 
 ---
 
